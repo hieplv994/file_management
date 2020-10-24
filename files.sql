@@ -1,0 +1,9 @@
+CREATE DATABASE file_management;
+
+CREATE TABLE files (
+  path VARCHAR(1000) NOT NULL PRIMARY KEY,
+  size INT NOT NULL,
+  hash VARCHAR(255) NOT NULL,
+  date_created TIMESTAMP NOT NULL,
+  date_updated TIMESTAMP NOT NULL
+);
